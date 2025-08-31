@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center"
+        android:padding="24dp">
+
+
+        <!-- Login Title -->
+        <TextView
+            android:id="@+id/tvLoginTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:layout_marginTop="200dp"
+            android:layout_gravity="center"/>
+
+        <!-- Sign Up Link -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_gravity="start"
+            android:layout_marginStart="88dp"
+            android:text="Don't have an account?"
+            android:textColor="#000000"
+            android:textSize="14sp" />
+
+
+        <!-- Phone Input -->
+
+        <TextView
+            android:id="@+id/tvSignUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="-20dp"
+            android:layout_marginEnd="80dp"
+            android:scaleType="centerCrop"
+            android:text="Sign up"
+            android:textColor="#00B0FF"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etPhone"
+            android:layout_width="320dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="12dp"
+            android:hint="+63"
+            android:textSize="15sp"
+            android:drawableLeft="@android:drawable/ic_menu_call"
+            android:background="@drawable/edittext_bg"
+            android:padding="10dp"
+            android:inputType="phone"/>
+
+        <!-- Password Input -->
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="320dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="12dp"
+            android:hint="Password"
+            android:textSize="15sp"
+            android:drawableLeft="@android:drawable/ic_lock_idle_lock"
+            android:background="@drawable/edittext_bg"
+            android:padding="10dp"
+            android:inputType="textPassword"/>
+
+        <!-- Forgot Password -->
+
+        <!-- Login Button -->
+
+        <!-- Continue with -->
+        <TextView
+            android:id="@+id/tvForgotPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="10dp"
+            android:text="Forgot Password?"
+            android:textColor="#2196F3"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="115dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="15dp"
+            android:backgroundTint="#2196F3"
+            android:text="Login"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Continue with"
+            android:textSize="14sp"
+            android:textColor="#000000"
+            android:layout_marginTop="24dp"/>
+
+        <!-- Social Buttons -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="12dp">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/facebook"
+                android:layout_margin="8dp"/>
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/google"
+                android:layout_margin="8dp"/>
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/discord"
+                android:layout_margin="8dp"/>
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/instagram"
+                android:layout_margin="8dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
